@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./app.js" defer></script>
+    <title>Algos</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="title">Sorting Visualizer</h1>
+        <div class="options">
+          <select name="algos" id="algos">
+            <option value="bubble">Bubble Sort</option>
+            <option value="selection">Selection Sort</option>
+            <option value="insertion">Insertion Sort</option>
+            <option value="merge">Merge Sort</option>
+          </select>
+          <div>
+            <input
+              type="range"
+              title="Number of bars"
+              id="numberOfBars"
+              min="10"
+              max="100"
+              value="40"
+            />
+            <output id="numberOfBarsValue">40</output>
+          </div>
+        </div>
+      </div>
+      <div class="visual">
+        <div class="box"></div>
+        <div class="buttons">
+          <button onclick="init()">INIT</button>
+          <button onclick="play()">PLAY</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
